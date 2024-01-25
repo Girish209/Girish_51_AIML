@@ -1,1 +1,1 @@
-# Girish_51_AIML
+# Python programs for practice
