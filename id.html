@@ -9,5 +9,15 @@
     hello
     <h2>Hwllo</h2>
     <h3>This is heading 3</h3>
+    <input type="range" id="volume"/>
 </body>
+<script>
+    let volume=document.querySelector("#volume");
+    var audio = new Audio('https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3');
+    audio.play();
+    volume.addEventListener("change",()=>{
+        console.log(volume.value);
+        audio.volume=volume.value/100;
+    })
+</script>
 </html>
