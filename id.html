@@ -28,10 +28,14 @@
     one.addEventListener('mouseup',()=>{
         end=new Date();
         time=end-start;
+        
         if(time/10<24){
             console.log(time/100);
             volume.value=time/100;
         }else{
+            if(time/10>100){
+                time=1000;
+            }
             console.log(time/10);
             volume.value=time/10;
         }
