@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     hello
     <h2>Hwllo</h2>
-    <h3 >This is heading 3</h3>
+    <h3>This is heading 3</h3>
     <button id="one">tap</button>
     <input type="range" id="volume" />
     <input type="range" id="volume2" />
-</body>
-<script>
-    let volume=document.querySelector("#volume");
-    volume.disabled=true
-    var audio = new Audio('https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3');
-    let one=document.querySelector("#one");
-    let time=0
+  </body>
+  <script>
+    let volume = document.querySelector("#volume");
+    volume.disabled = true;
+    var audio = new Audio(
+      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+    );
+    let one = document.querySelector("#one");
+    let time = 0;
     var start;
     var end;
 
     audio.play();
-    one.addEventListener('mousedown',()=>{
-        start=new Date();
-    })
-    one.addEventListener('mouseup',()=>{
-        end=new Date();
-        time=end-start;
-        
-        if(time/10<24){
-            console.log(time/100);
-            volume.value=time/100;
-        }else{
-            if(time/10>100){
-                time=1000;
-            }
-            console.log(time/10);
-            volume.value=time/10;
+    one.addEventListener("mousedown", () => {
+      start = new Date();
+    });
+    one.addEventListener("mouseup", () => {
+      end = new Date();
+      time = end - start;
+
+      if (time / 10 < 24) {
+        console.log(time / 100);
+        volume.value = time / 100;
+      } else {
+        if (time / 10 > 100) {
+          time = 1000;
         }
-    })
-    
-    volume.addEventListener("change",()=>{
-        console.log(volume.value);
-        audio.volume=volume.value/100;
-    })
-    window.onblur = function () { 
-  alert('trying to switch tabs eh !'); 
-}; 
-</script>
+        console.log(time / 10);
+        volume.value = time / 10;
+      }
+    });
+
+    volume.addEventListener("change", () => {
+      console.log(volume.value);
+      audio.volume = volume.value / 100;
+    });
+    window.onblur = function () {
+      alert("trying to switch tabs eh !");
+    };
+  </script>
 </html>
