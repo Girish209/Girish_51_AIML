@@ -6,7 +6,6 @@
     <title>Document</title>
   </head>
   <body>
-    added
     <h3>This is heading 3</h3>
     <button id="one">tap</button>
     <input type="range" id="volume" />
@@ -15,10 +14,10 @@
   <script>
     let volume = document.querySelector("#volume");
     volume.disabled = true;
-    var audio = new Audio(
+    const audio = new Audio(
       "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
     );
-    let one = document.querySelector("#one");
+    const one = document.querySelector("#one");
     let time = 0;
     var start;
     var end;
