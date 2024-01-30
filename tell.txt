@@ -46,3 +46,15 @@ reset
     it is also used to revert a change in a repository. It overwrites the history. 
 amend
     Used to modify the most recent commit message.
+cherry pick
+     is a command that allows you to take a single commit from one branch and add it as the latest commit on another branch.
+     The rest of the commits in the source branch are not added to the target. 
+
+
+      o--o--o
+     /
+o--o--o--o
+        \
+         o--o--o
+           \
+            o--o--o
