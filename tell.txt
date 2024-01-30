@@ -1,0 +1,48 @@
+what is git
+    version control system i.e. used to manage changes in a project's source code.
+advantages of git
+    Users can work independently without interfering each others code and without affecting main source code.
+git architecture
+    Look image.........
+repository
+    it is a space where all our codebase and its changes are is stored. 
+local repository
+    repository i.e. stored in our local storage/ system.
+remote repository
+    repository i.e. stored in a server.
+commits
+    It is a snapshot of the code at a perticular instant of time. It represents a complete set of change made to the codebase.
+staging
+    Process of preparing the code to be commited.
+push
+    Used to transfer the commits from local repository to remote repository.
+pull
+    Used to get the modified code from remote to local repository.
+clone
+    Used to copy the whole code from remote repository to local repository.
+remote
+    It is used to add the url of remote repository to local repository.
+branches
+    Separate line of development created from a specific commit to the codebase. Each branch has 
+    a own set of changes taht can be merged when ready.
+advantages of branches
+    Allows developers to work on the code independently. It also allows developers to 
+    experiment with new features without affecting the main codebase.
+fetch
+    The git fetch command is used to download the latest changes from a remote repository to your local repository. 
+    It does not merge the changes into your local branch. Instead, it creates a new branch called FETCH_HEAD that contains the changes. 
+    You can then use the git merge command to merge the changes from FETCH_HEAD into your local branch.
+checkout
+    Used to switch branches. Can also be used to retrieve the code from previous commits.
+switch
+    only used to switch between branches.
+merge
+    combines changes of two or more branches into one.
+stash
+    Used to store the uncommited work temporarily.
+Revert
+    Used to undo a change in the repository. It does not overwrite the commit history. After reverting the history will increased by 1.
+reset
+    it is also used to revert a change in a repository. It overwrites the history. 
+amend
+    Used to modify the most recent commit message.
