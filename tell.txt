@@ -24,7 +24,7 @@ remote
     It is used to add the url of remote repository to local repository.
 branches
     Separate line of development created from a specific commit to the codebase. Each branch has 
-    a own set of changes that can be merged when ready.
+    a own set of changes taht can be merged when ready.
 advantages of branches
     Allows developers to work on the code independently. It also allows developers to 
     experiment with new features without affecting the main codebase.
