@@ -34,8 +34,9 @@ fetch
     You can then use the git merge command to merge the changes from FETCH_HEAD into your local branch.
 checkout
     Used to switch branches. Can also be used to retrieve the code from previous commits.
+     if you have unstaged changes and you run git checkout <branch-name>, you will lose those changes.
 switch
-    only used to switch between branches.
+    only used to switch between branches. If you have unstaged changes on the current branch, git switch will abort the switch.
 merge
     combines changes of two or more branches into one.
 stash
@@ -43,7 +44,7 @@ stash
 Revert
     Used to undo a change in the repository. It does not overwrite the commit history. After reverting the history will increased by 1.
 reset
-    it is also used to revert a change in a repository. It overwrites the history. 
+    it is also used to undo a change in a repository. It overwrites the history. 
 amend
     Used to modify the most recent commit message.
 cherry pick
